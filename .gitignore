@@ -1,1 +1,16 @@
+# Ignore compiled Java class files
+*.class
+
+# Ignore Eclipse metadata
 /.metadata/
+/bin/
+/.settings/
+*.log
+
+# macOS specific file
+.DS_Store
+
+# IntelliJ / VSCode / Other IDEs (optional)
+.idea/
+.vscode/
+out/
