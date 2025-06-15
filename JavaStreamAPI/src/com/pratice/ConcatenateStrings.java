@@ -10,6 +10,7 @@ public class ConcatenateStrings {
 		List<String> names = Arrays.asList("Papun", "Kumar", "Mohapatra");
 		String ops = names.stream().collect(Collectors.joining(" "));
 		System.out.println(ops);
+		System.out.println(names.stream().collect(Collectors.joining(" ", "[", "]")));
 	}
 
 }
