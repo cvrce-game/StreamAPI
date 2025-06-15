@@ -3,10 +3,23 @@ package com.pratice;
 public class Employee {
 	String name;
 	String department;
+	double salary;
 
-	Employee(String name, String department) {
+	public Employee(String name, String department, double salary) {
+		super();
 		this.name = name;
 		this.department = department;
+		this.salary = salary;
+	}
+
+	public Employee(String name, String department) {
+		super();
+		this.name = name;
+		this.department = department;
+	}
+
+	Employee(String name) {
+		this.name = name;
 	}
 
 	public String getName() {
@@ -16,4 +29,9 @@ public class Employee {
 	public String getDepartment() {
 		return department;
 	}
+
+	public double getSalary() {
+		return salary;
+	}
+
 }
