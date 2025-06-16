@@ -32,6 +32,11 @@ public class Employee {
 		this.salary = salary;
 	}
 
+	Employee(String name, double salary) {
+		this.name = name;
+		this.salary = salary;
+	}
+
 	Employee(String name) {
 		this.name = name;
 	}
