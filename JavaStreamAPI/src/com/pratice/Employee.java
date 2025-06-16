@@ -1,6 +1,7 @@
 package com.pratice;
 
 public class Employee {
+	int id;
 	String name;
 	String department;
 	double salary;
@@ -25,6 +26,12 @@ public class Employee {
 		this.department = department;
 	}
 
+	Employee(int id, String name, double salary) {
+		this.id = id;
+		this.name = name;
+		this.salary = salary;
+	}
+
 	Employee(String name) {
 		this.name = name;
 	}
@@ -43,6 +50,10 @@ public class Employee {
 
 	public int getAge() {
 		return age;
+	}
+
+	public int getId() {
+		return id;
 	}
 
 }
