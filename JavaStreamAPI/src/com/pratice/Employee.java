@@ -4,11 +4,18 @@ public class Employee {
 	String name;
 	String department;
 	double salary;
+	int age;
 
 	public Employee(String name, String department, double salary) {
 		super();
 		this.name = name;
 		this.department = department;
+		this.salary = salary;
+	}
+
+	Employee(String name, int age, double salary) {
+		this.name = name;
+		this.age = age;
 		this.salary = salary;
 	}
 
@@ -32,6 +39,10 @@ public class Employee {
 
 	public double getSalary() {
 		return salary;
+	}
+
+	public int getAge() {
+		return age;
 	}
 
 }
