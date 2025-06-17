@@ -9,5 +9,8 @@ public class CharFrequency {
 
 		Map<Character, Long> frequencyMap = input.chars().filter(c -> c != ' ') // Optional: skip spaces
 				.mapToObj(c -> (char) c).collect(Collectors.groupingBy(c -> c, Collectors.counting()));
+		frequencyMap.entrySet().stream().forEach(entry -> {
+			System.out.println(entry.getKey() + "->" + entry.getValue());
+		});
 	}
 }
